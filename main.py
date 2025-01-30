@@ -10,6 +10,6 @@ def calc_blockdistance (speed_kmh, brakedelay, safetydistance):
     
     return blockdistance
 
-# excample: Speed = 140 km/h, Brakedelay = 0.5 m/s², Safetydistance = 900 m
+# Currently: Speed = 140 km/h, Brakedelay = 0.5 m/s², Safetydistance = 900 m
 blockdistance = calc_blockdistance (140, 0.5, 900)
 print(f"The blockdistance amounts : {blockdistance:.2f} meters")
