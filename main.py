@@ -1,15 +1,15 @@
-def berechne_blockabstand(geschwindigkeit_kmh, bremsverzoegerung, sicherheitsabstand):
-    # Geschwindigkeit in m/s umrechnen
-    v = geschwindigkeit_kmh * 1000 / 3600
+def calc_blockdistance (speed_kmh, brakedelay, safetydistance):
+    # Speed in m/s
+    v = speed_kmh * 1000 / 3600
     
-    # Bremsweg berechnen
-    bremsweg = (v ** 2) / (2 * bremsverzoegerung)
+    # Brakedistance calc
+    brakedistance = (v ** 2) / (2 * brakedelay)
     
-    # Blockabstand berechnen
-    blockabstand = bremsweg + sicherheitsabstand
+    # Blockabstand calc
+    blockdistance = brakedistance + safetydistance
     
-    return blockabstand
+    return blockdistance
 
-# Beispiel: Geschwindigkeit = 100 km/h, Bremsverzögerung = 0.5 m/s², Sicherheitsabstand = 500 m
-blockabstand = berechne_blockabstand(140, 0.5, 900)
-print(f"Der Blockabstand beträgt: {blockabstand:.2f} Meter")
+# excample: Speed = 140 km/h, Brakedelay = 0.5 m/s², Safetydistance = 900 m
+blockdistance = calc_blockdistance (140, 0.5, 900)
+print(f"The blockdistance amounts : {blockdistance:.2f} meters")
