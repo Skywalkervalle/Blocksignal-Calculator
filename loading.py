@@ -13,3 +13,7 @@ while True:
     if time.time() - start_time > 10:  # The animation will last for 10 seconds
         break
 sys.stdout.write("\rDone!")
+
+
+
+# source: https://medium.com/@joloiuy/creating-captivating-terminal-animations-in-python-a-fun-and-interactive-guide-2eeb2a6b25ec

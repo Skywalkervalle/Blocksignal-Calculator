@@ -1,3 +1,5 @@
+print("Herzlich Willkommen")
+
 user_speed = input("Enter Speed in kmh: ")
 speed_kmh = int(user_speed)
 
@@ -13,7 +15,7 @@ safetydistance = int (user_safetydistance)
 import time
 import sys
 
-animation = "|/-\\"
+animation = "|/-\\|/-\\"
 start_time = time.time()
 while True:
     for i in range(4):
