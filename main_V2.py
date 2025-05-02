@@ -22,7 +22,7 @@ while True:
         time.sleep(0.1)  # Feel free to experiment with the speed here
         sys.stdout.write("\r" + animation[i % len(animation)])
         sys.stdout.flush()
-    if time.time() - start_time > 5:  # The animation will last for 5 seconds
+    if time.time() - start_time > 3:  # The animation will last for 5 seconds
         break
 sys.stdout.write("\rDone!")
 
